@@ -1,0 +1,100 @@
+@font-face {
+  font-family: Gilroy;
+  src: local("Gilroy"),
+    url("./assets/fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: NekstBlack;
+  src: local("NekstBlack"),
+    url("./assets/fonts/Nekst/Nekst-Black.ttf") format("truetype");
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_layout {
+  width: 100%;
+  padding: 0 calc(48 * ((100vw - 320px) / (1440 - 320)));
+
+  h1 {
+    width: calc(279px + (753 - 279) * ((100vw - 320px) / (1440 - 320)));
+    margin-bottom: calc(16px + (32 - 16) * ((100vw - 320px) / (1440 - 320)));
+    font-family: NekstBlack, serif;
+    font-size: calc(34px + (54 - 34) * ((100vw - 320px) / (1440 - 320)));
+    line-height: 93%;
+  }
+
+  h4 {
+    font-family: Gilroy, serif;
+    font-weight: 400;
+    font-size: calc(16 * ((100vw - 320px) / (1440 - 320)));
+  }
+}
+
+@media (min-width: 1920px) {
+  .main_layout {
+    padding: 0 calc(90 * ((100vw - 320px) / (1920 - 320)));
+  }
+}
+
+@media (min-width: 1120px) and (max-width: 1439px) {
+  .main_layout {
+    padding: 0 calc(48 * ((100vw - 320px) / (1120 - 320)));
+
+    h1 {
+      width: calc(279px + (753 - 279) * ((100vw - 320px) / (1120 - 320)));
+      margin-bottom: calc(16px + (32 - 16) * ((100vw - 320px) / (1120 - 320)));
+      font-size: calc(34px + (54 - 34) * ((100vw - 320px) / (1120 - 320)));
+    }
+
+    h4 {
+      font-size: calc(16 * ((100vw - 320px) / (1120 - 320)));
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+  #root {
+    display: block;
+  }
+
+  .main_layout {
+    padding: calc(64 * ((100vw - 320px) / (768 - 320)))
+    calc(36 * ((100vw - 320px) / (768 - 320))) 0;
+
+    h1 {
+      width: calc(279px + (696 - 279) * ((100vw - 320px) / (768 - 320)));
+      margin-bottom: calc(16px + (44 - 16) * ((100vw - 320px) / (768 - 320)));
+      font-size: calc(34px + (54 - 34) * ((100vw - 320px) / (768 - 320)));
+    }
+
+    h4 {
+      font-size: calc(16 * ((100vw - 320px) / (768 - 320)));
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #root {
+    display: block;
+  }
+
+  .main_layout {
+    padding: calc(44 * (100vw / 320))
+    calc(20 * (100vw / 320)) 0;
+
+    h1 {
+      width: calc(220 * (100vw / 320));
+      margin-bottom: calc(32 * (100vw / 320));
+      font-size: calc(34 * (100vw / 320));
+    }
+
+    h4 {
+      font-size: calc(14 * (100vw / 320));
+    }
+  }
+}

@@ -1,0 +1,211 @@
+.leasing_form-inputs {
+  margin-bottom: calc(25px + (50 - 25) * ((100vw - 320px) / (1440 - 320)));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h4 {
+    margin-bottom: calc(8px + (24 - 8) * ((100vw - 320px) / (1440 - 320)));
+    line-height: calc(19px + (20 - 19) * ((100vw - 320px) / (1440 - 320)));
+  }
+
+  input {
+    font-family: NekstBlack, serif;
+    font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1440 - 320)));
+    line-height: calc(20px + (36 - 20) * ((100vw - 320px) / (1440 - 320)));
+    color: #575757;
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button  {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    padding: 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #F3F3F4;
+    cursor: pointer;
+
+    &:focus {
+      background: #ffffff;
+    }
+  }
+}
+
+.leasing_form-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h4 {
+    margin-bottom: calc(8 * ((100vw - 320px) / (1440 - 320)));
+    line-height: calc(19px + (24 - 19) * ((100vw - 320px) / (1440 - 320)));
+  }
+
+  p {
+    font-family: NekstBlack, serif;
+    font-size: calc(22px + (54 - 22) * ((100vw - 320px) / (1440 - 320)));
+    line-height: calc(20px + (49 - 20) * ((100vw - 320px) / (1440 - 320)));
+    color: #333333;
+  }
+
+  button {
+    width: calc(280px + (426 - 280) * ((100vw - 320px) / (1440 - 320)));
+    height:calc(50px + (68 - 50) * ((100vw - 320px) / (1440 - 320)));
+    font-family: NekstBlack, serif;
+    font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1440 - 320)));
+    line-height: calc(20px + (36 - 20) * ((100vw - 320px) / (1440 - 320)));
+    color: #FFFFFF;
+    background: #FF9514;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background: #111111;
+    }
+
+    &:active {
+      background: #575757;
+    }
+
+    &:disabled {
+      background: rgba(255, 149, 20, 0.4);
+    }
+
+    .loader {
+      width: calc(21px + (45 - 21) * ((100vw - 320px) / (1440 - 320)));
+      height: calc(21px + (45 - 21) * ((100vw - 320px) / (1440 - 320)));
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  }
+}
+
+@media (min-width: 1120px) and (max-width: 1439px) {
+  .leasing_form-inputs {
+    margin-bottom: calc(25px + (50 - 25) * ((100vw - 320px) / (1120 - 320)));
+
+    h4 {
+      margin-bottom: calc(8px + (24 - 8) * ((100vw - 320px) / (1120 - 320)));
+      line-height: calc(19px + (20 - 19) * ((100vw - 320px) / (1120 - 320)));
+    }
+
+    input {
+      font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1120 - 320)));
+      line-height: calc(20px + (36 - 20) * ((100vw - 320px) / (1120 - 320)));
+    }
+  }
+
+  .leasing_form-info {
+    h4 {
+      margin-bottom: calc(8 * ((100vw - 320px) / (1120 - 320)));
+      line-height: calc(19px + (24 - 19) * ((100vw - 320px) / (1120 - 320)));
+    }
+
+    p {
+      font-size: calc(22px + (54 - 22) * ((100vw - 320px) / (1120 - 320)));
+      line-height: calc(20px + (49 - 20) * ((100vw - 320px) / (1120 - 320)));
+    }
+
+    button {
+      width: calc(280px + (320 - 280) * ((100vw - 320px) / (1120 - 320)));
+      height:calc(50px + (68 - 50) * ((100vw - 320px) / (1120 - 320)));
+      font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1120 - 320)));
+      line-height: calc(20px + (36 - 20) * ((100vw - 320px) / (1120 - 320)));
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+  .leasing_form-inputs {
+    margin-bottom: calc(25px + (39 - 25) * ((100vw - 320px) / (768 - 320)));
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
+
+    h4 {
+      margin-bottom: calc(8px + (24 - 8) * ((100vw - 320px) / (768 - 320)));
+      line-height: calc(19px + (20 - 19) * ((100vw - 320px) / (768 - 320)));
+    }
+
+    input {
+      font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (768 - 320)));
+      line-height: calc(20px + (36 - 20) * ((100vw - 320px) / (768 - 320)));
+    }
+  }
+
+  .leasing_form-info {
+    flex-wrap: wrap;
+    gap: 44px 0;
+
+    h4 {
+      margin-bottom: calc(8 * ((100vw - 320px) / (768 - 320)));
+      line-height: calc(19px + (24 - 19) * ((100vw - 320px) / (768 - 320)));
+    }
+
+    p {
+      font-size: calc(22px + (54 - 22) * ((100vw - 320px) / (768 - 320)));
+      line-height: calc(20px + (49 - 20) * ((100vw - 320px) / (768 - 320)));
+    }
+
+    button {
+      width: calc(280px + (345 - 280) * ((100vw - 320px) / (768 - 320)));
+      height:calc(50px + (68 - 50) * ((100vw - 320px) / (768 - 320)));
+      font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (768 - 320)));
+      line-height: calc(20px + (36 - 20) * ((100vw - 320px) / (768 - 320)));
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .leasing_form-inputs {
+    margin-bottom: calc(22 * (100vw / 320));
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+
+    h4 {
+      margin-bottom: calc(8 * (100vw / 320));
+      line-height: calc(19 * (100vw / 320));
+    }
+
+    input {
+      font-size: calc(22 * (100vw / 320));
+      line-height: calc(20 * (100vw / 320));
+    }
+  }
+
+  .leasing_form-info {
+    flex-wrap: wrap;
+    gap: 28px 0;
+
+    h4 {
+      margin-bottom: calc(2 * (100vw / 320));
+      line-height: calc(19 * (100vw / 320));
+    }
+
+    p {
+      font-size: calc(22 * (100vw / 320));
+      line-height: calc(20 * (100vw / 320));
+    }
+
+    button {
+      width: calc(280 * (100vw / 320));
+      height:calc(60 * (100vw / 320));
+      font-size: calc(22 * (100vw / 320));
+      line-height: calc(20 * (100vw / 320));
+    }
+  }
+}

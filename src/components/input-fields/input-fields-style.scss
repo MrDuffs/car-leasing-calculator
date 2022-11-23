@@ -1,0 +1,421 @@
+.car_price-container {
+  width: calc(280px + (427 - 280) * ((100vw - 320px) / (1440 - 320)));
+  display: flex;
+  flex-direction: column;
+
+  .car_price-input {
+    padding: calc(10px + (16 - 10) * ((100vw - 320px) / (1440 - 320)))
+        calc(18px + (24 - 18) * ((100vw - 320px) / (1440 - 320)));
+    background: #F3F3F4;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:focus-within {
+      padding: calc(8px + (14 - 8) * ((100vw - 320px) / (1440 - 320)))
+          calc(16px + (22 - 16) * ((100vw - 320px) / (1440 - 320)));
+      background: #ffffff;
+      border: 2px solid #F3F3F4;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 0;
+      border: none;
+      background-color: #F3F3F4;
+      cursor: pointer;
+    }
+
+    span {
+      font-family: NekstBlack, serif;
+      font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1440 - 320)));
+      line-height: calc(20px + (36 - 20) * ((100vw - 320px) / (1440 - 320)));
+      color: #575757;
+    }
+  }
+}
+
+.initial_fee-container {
+  width: calc(280px + (427 - 280) * ((100vw - 320px) / (1440 - 320)));
+  display: flex;
+  flex-direction: column;
+
+  .initial_fee-field {
+    padding: calc(4px + (7 - 4) * ((100vw - 320px) / (1440 - 320)))
+      calc(4px + (7 - 4) * ((100vw - 320px) / (1440 - 320)))
+      calc(4px + (7 - 4) * ((100vw - 320px) / (1440 - 320)))
+      calc(18px + (24 - 18) * ((100vw - 320px) / (1440 - 320)));
+    background: #F3F3F4;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    .initial_fee-value {
+      font-family: NekstBlack, serif;
+      font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1440 - 320)));
+      line-height: calc(20px + (36 - 20) * ((100vw - 320px) / (1440 - 320)));
+      color: #575757;
+    }
+
+    .initial_fee-input {
+      display: flex;
+      align-items: center;
+      padding: calc(9px + (15 - 9) * ((100vw - 320px) / (1440 - 320)))
+        calc(11px + (17 - 11) * ((100vw - 320px) / (1440 - 320)));
+      background: #EBEBEC;
+      border-radius: 16px;
+
+      &:focus-within {
+        padding: calc(7px + (13 - 7) * ((100vw - 320px) / (1440 - 320)))
+        calc(9px + (15 - 9) * ((100vw - 320px) / (1440 - 320)));
+        background: #ffffff;
+        border: 2px solid #EBEBEC;
+      }
+
+      input[type="number"] {
+        padding: 0;
+        width: calc(15px + (25 - 15) * ((100vw - 320px) / (1440 - 320)));
+        font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
+        line-height: calc(14px + (24 - 14) * ((100vw - 320px) / (1440 - 320)));
+        outline: none;
+        border: none;
+        background-color: #EBEBEC;
+
+        &:focus {
+          background: #ffffff;
+        }
+      }
+
+      span {
+        font-family: NekstBlack, serif;
+        font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
+        line-height: calc(14px + (24 - 14) * ((100vw - 320px) / (1440 - 320)));
+        color: #575757;
+      }
+    }
+  }
+}
+
+.leasing_term-container {
+  width: calc(280px + (427 - 280) * ((100vw - 320px) / (1440 - 320)));
+  display: flex;
+  flex-direction: column;
+
+  .leasing_term-input {
+    padding: calc(10px + (16 - 10) * ((100vw - 320px) / (1440 - 320)))
+    calc(18px + (24 - 18) * ((100vw - 320px) / (1440 - 320)));
+    background: #F3F3F4;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:focus-within {
+      padding: calc(8px + (14 - 8) * ((100vw - 320px) / (1440 - 320)))
+      calc(16px + (22 - 16) * ((100vw - 320px) / (1440 - 320)));
+      background: #ffffff;
+      border: 2px solid #F3F3F4;
+    }
+
+    span {
+      font-family: NekstBlack, serif;
+      font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1440 - 320)));
+      line-height: calc(20px + (36 - 20) * ((100vw - 320px) / (1440 - 320)));
+      color: #575757;
+    }
+  }
+}
+
+.fields-input_range {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0 calc(18px + (24 - 18) * ((100vw - 320px) / (1440 - 320)));
+  width: calc(240px + (380 - 240) * ((100vw - 320px) / (1440 - 320)));
+  height: 2px;
+  outline: 0;
+  position: relative;
+  bottom: 2px;
+  cursor: pointer;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
+    height: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
+    border-radius: 50%;
+    background-color: #FF9514;
+
+    &:hover {
+      width: calc(14px + (24 - 14) * ((100vw - 320px) / (1440 - 320)));
+      height: calc(14px + (24 - 14) * ((100vw - 320px) / (1440 - 320)));
+    }
+  }
+}
+
+@media (min-width: 1120px) and (max-width: 1439px) {
+  .car_price-container {
+    width: calc(280px + (320 - 280) * ((100vw - 320px) / (1120 - 320)));
+
+    .car_price-input {
+      padding: calc(10px + (16 - 10) * ((100vw - 320px) / (1120 - 320)))
+      calc(18px + (24 - 18) * ((100vw - 320px) / (1120 - 320)));
+
+      &:focus-within {
+        padding: calc(8px + (14 - 8) * ((100vw - 320px) / (1120 - 320)))
+        calc(16px + (22 - 16) * ((100vw - 320px) / (1120 - 320)));
+      }
+
+      span {
+        font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1120 - 320)));
+        line-height: calc(20px + (36 - 20) * ((100vw - 320px) / (1120 - 320)));
+      }
+    }
+  }
+
+  .initial_fee-container {
+    width: calc(280px + (320 - 280) * ((100vw - 320px) / (1120 - 320)));
+
+    .initial_fee-field {
+      padding: calc(4px + (7 - 4) * ((100vw - 320px) / (1120 - 320)))
+      calc(4px + (7 - 4) * ((100vw - 320px) / (1120 - 320)))
+      calc(4px + (7 - 4) * ((100vw - 320px) / (1120 - 320)))
+      calc(18px + (24 - 18) * ((100vw - 320px) / (1120 - 320)));
+
+      .initial_fee-input {
+        padding: calc(9px + (15 - 9) * ((100vw - 320px) / (1120 - 320)))
+        calc(11px + (17 - 11) * ((100vw - 320px) / (1120 - 320)));
+
+        &:focus-within {
+          padding: calc(7px + (13 - 7) * ((100vw - 320px) / (1120 - 320)))
+          calc(9px + (15 - 9) * ((100vw - 320px) / (1120 - 320)));
+        }
+
+        input[type="number"] {
+          width: calc(15px + (25 - 15) * ((100vw - 320px) / (1120 - 320)));
+          font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1120 - 320)));
+          line-height: calc(14px + (24 - 14) * ((100vw - 320px) / (1120 - 320)));
+        }
+      }
+    }
+  }
+
+  .leasing_term-container {
+    width: calc(280px + (320 - 280) * ((100vw - 320px) / (1120 - 320)));
+
+    .leasing_term-input {
+      padding: calc(10px + (16 - 10) * ((100vw - 320px) / (1120 - 320)))
+      calc(18px + (24 - 18) * ((100vw - 320px) / (1120 - 320)));
+
+      &:focus-within {
+        padding: calc(8px + (14 - 8) * ((100vw - 320px) / (1120 - 320)))
+        calc(16px + (22 - 16) * ((100vw - 320px) / (1120 - 320)));
+      }
+
+      span {
+        font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1120 - 320)));
+        line-height: calc(20px + (36 - 20) * ((100vw - 320px) / (1120 - 320)));
+      }
+    }
+  }
+
+  .fields-input_range {
+    margin: 0 calc(18px + (24 - 18) * ((100vw - 320px) / (1120 - 320)));
+    width: calc(240px + (272 - 240) * ((100vw - 320px) / (1120 - 320)));
+
+    &::-webkit-slider-thumb {
+      width: calc(10px + (20 - 10) * ((100vw - 320px) / (1120 - 320)));
+      height: calc(10px + (20 - 10) * ((100vw - 320px) / (1120 - 320)));
+
+      &:hover {
+        width: calc(14px + (24 - 14) * ((100vw - 320px) / (1120 - 320)));
+        height: calc(14px + (24 - 14) * ((100vw - 320px) / (1120 - 320)));
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+  .car_price-container {
+    width: calc(280px + (696 - 280) * ((100vw - 320px) / (768 - 320)));
+
+    .car_price-input {
+      padding: calc(10px + (16 - 10) * ((100vw - 320px) / (768 - 320)))
+      calc(18px + (24 - 18) * ((100vw - 320px) / (768 - 320)));
+
+      &:focus-within {
+        padding: calc(8px + (14 - 8) * ((100vw - 320px) / (768 - 320)))
+        calc(16px + (22 - 16) * ((100vw - 320px) / (768 - 320)));
+      }
+
+      span {
+        font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (768 - 320)));
+        line-height: calc(20px + (36 - 20) * ((100vw - 320px) / (768 - 320)));
+      }
+    }
+  }
+
+  .initial_fee-container {
+    width: calc(280px + (696 - 280) * ((100vw - 320px) / (768 - 320)));
+
+    .initial_fee-field {
+      padding: calc(4px + (7 - 4) * ((100vw - 320px) / (768 - 320)))
+      calc(4px + (7 - 4) * ((100vw - 320px) / (768 - 320)))
+      calc(4px + (7 - 4) * ((100vw - 320px) / (768 - 320)))
+      calc(18px + (24 - 18) * ((100vw - 320px) / (768 - 320)));
+
+      .initial_fee-value {
+        font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (768 - 320)));
+        line-height: calc(20px + (36 - 20) * ((100vw - 320px) / (768 - 320)));
+      }
+
+      .initial_fee-input {
+        padding: calc(9px + (15 - 9) * ((100vw - 320px) / (768 - 320)))
+        calc(11px + (17 - 11) * ((100vw - 320px) / (768 - 320)));
+
+        &:focus-within {
+          padding: calc(7px + (13 - 7) * ((100vw - 320px) / (768 - 320)))
+          calc(9px + (15 - 9) * ((100vw - 320px) / (768 - 320)));
+        }
+
+        input[type="number"] {
+          width: calc(15px + (24 - 15) * ((100vw - 320px) / (768 - 320)));
+          font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (768 - 320)));
+          line-height: calc(14px + (24 - 14) * ((100vw - 320px) / (768 - 320)));
+        }
+
+        span {
+          font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (768 - 320)));
+          line-height: calc(14px + (24 - 14) * ((100vw - 320px) / (768 - 320)));
+        }
+      }
+    }
+  }
+
+  .leasing_term-container {
+    width: calc(280px + (696 - 280) * ((100vw - 320px) / (768 - 320)));
+
+    .leasing_term-input {
+      padding: calc(10px + (16 - 10) * ((100vw - 320px) / (768 - 320)))
+      calc(18px + (24 - 18) * ((100vw - 320px) / (768 - 320)));
+
+      &:focus-within {
+        padding: calc(8px + (14 - 8) * ((100vw - 320px) / (768 - 320)))
+        calc(16px + (22 - 16) * ((100vw - 320px) / (768 - 320)));
+      }
+
+      span {
+        font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (768 - 320)));
+        line-height: calc(20px + (36 - 20) * ((100vw - 320px) / (768 - 320)));
+      }
+    }
+  }
+
+  .fields-input_range {
+    margin: 0 calc(18px + (24 - 18) * ((100vw - 320px) / (768 - 320)));
+    width: calc(240px + (648 - 240) * ((100vw - 320px) / (768 - 320)));
+
+    &::-webkit-slider-thumb {
+      width: calc(10px + (20 - 10) * ((100vw - 320px) / (768 - 320)));
+      height: calc(10px + (20 - 10) * ((100vw - 320px) / (768 - 320)));
+
+      &:hover {
+        width: calc(14px + (24 - 14) * ((100vw - 320px) / (768 - 320)));
+        height: calc(14px + (24 - 14) * ((100vw - 320px) / (768 - 320)));
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .car_price-container {
+    width: calc(280 * (100vw / 320));
+
+    .car_price-input {
+      padding: calc(17 * (100vw / 320))
+      calc(20 * (100vw / 320));
+      border-radius: calc(16 * (100vw / 320));
+
+      &:focus-within {
+        padding: calc(15 * (100vw / 320)) calc(18 * (100vw / 320));
+      }
+
+      span {
+        font-size: calc(22 * (100vw / 320));
+        line-height: calc(20 * (100vw / 320));
+      }
+    }
+  }
+
+  .initial_fee-container {
+    width: calc(280 * (100vw / 320));
+
+    .initial_fee-field {
+      padding: calc(5 * (100vw / 320))
+      calc(6 * (100vw / 320))
+      calc(5 * (100vw / 320))
+      calc(20 * (100vw / 320));
+      border-radius: calc(16 * (100vw / 320));
+
+      .initial_fee-value {
+        font-size: calc(22 * (100vw / 320));
+        line-height: calc(20 * (100vw / 320));
+      }
+
+      .initial_fee-input {
+        padding: calc(12 * (100vw / 320));
+        border-radius: calc(14 * (100vw / 320));
+
+        &:focus-within {
+          padding: calc(10 * (100vw / 320));
+        }
+
+        input[type="number"] {
+          width: calc(27 * (100vw / 320));
+          font-size: calc(22 * (100vw / 320));
+          line-height: calc(20 * (100vw / 320));
+        }
+
+        span {
+          font-size: calc(22 * (100vw / 320));
+          line-height: calc(20 * (100vw / 320));
+        }
+      }
+    }
+  }
+
+  .leasing_term-container {
+    width: calc(280 * (100vw / 320));
+
+    .leasing_term-input {
+      padding: calc(17 * (100vw / 320))
+      calc(20 * (100vw / 320));
+      border-radius: calc(16 * (100vw / 320));
+
+      &:focus-within {
+        padding: calc(15 * (100vw / 320)) calc(18 * (100vw / 320));
+      }
+
+      span {
+        font-size: calc(22 * (100vw / 320));
+        line-height: calc(20 * (100vw / 320));
+      }
+    }
+  }
+
+  .fields-input_range {
+    margin: 0 calc(20 * (100vw / 320));
+    width: calc(240 * (100vw / 320));
+
+    &::-webkit-slider-thumb {
+      width: calc(20 * (100vw / 320));
+      height: calc(20 * (100vw / 320));
+
+      &:hover {
+        width: calc(24 * (100vw / 320));
+        height: calc(24 * (100vw / 320));
+      }
+    }
+  }
+}

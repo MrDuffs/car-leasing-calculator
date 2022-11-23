@@ -1,0 +1,45 @@
+.leasing_agreement-field {
+  width: calc(167px + (427 - 167) * ((100vw - 320px) / (1440 - 320)));
+  height: calc(41px + (81 - 41) * ((100vw - 320px) / (1440 - 320)));
+}
+
+.month_pay-field {
+  width: calc(167px + (427 - 167) * ((100vw - 320px) / (1440 - 320)));
+  height: calc(41px + (81 - 41) * ((100vw - 320px) / (1440 - 320)));
+}
+
+@media (min-width: 1120px) and (max-width: 1439px) {
+  .leasing_agreement-field {
+    width: calc(167px + (320 - 167) * ((100vw - 320px) / (1120 - 320)));
+    height: calc(41px + (81 - 41) * ((100vw - 320px) / (1120 - 320)));
+  }
+
+  .month_pay-field {
+    width: calc(167px + (320 - 167) * ((100vw - 320px) / (1120 - 320)));
+    height: calc(41px + (81 - 41) * ((100vw - 320px) / (1120 - 320)));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+  .leasing_agreement-field {
+    width: calc(167px + (332 - 167) * ((100vw - 320px) / (768 - 320)));
+    height: calc(41px + (81 - 41) * ((100vw - 320px) / (768 - 320)));
+  }
+
+  .month_pay-field {
+    width: calc(167px + (332 - 167) * ((100vw - 320px) / (768 - 320)));
+    height: calc(41px + (81 - 41) * ((100vw - 320px) / (768 - 320)));
+  }
+}
+
+@media (max-width: 767px) {
+  .leasing_agreement-field {
+    width: calc(167 * (100vw / 320));
+    height: calc(41 * (100vw / 320));
+  }
+
+  .month_pay-field {
+    width: calc(167 * (100vw / 320));
+    height: calc(41 * (100vw / 320));
+  }
+}

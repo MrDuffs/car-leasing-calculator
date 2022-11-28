@@ -13,15 +13,17 @@ export const RangeInput = ({
     });
 
     return (
-        <input
-            className="fields-input_range"
-            type="range"
-            min={min}
-            max={max}
-            value={value}
-            onChange={onChange}
-            style={getInputRangeStyle()}
-            disabled={disabled}
-        />
+        <div className="range_input-container">
+            <input
+                className="range_input-field"
+                type="range"
+                min={min}
+                max={max}
+                value={value}
+                onChange={onChange}
+                style={getInputRangeStyle()}
+                disabled={disabled}
+            />
+        </div>
     );
 };

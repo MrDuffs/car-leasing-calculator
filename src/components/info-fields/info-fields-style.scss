@@ -20,7 +20,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1119px) {
+@media (max-width: 1119.98px) {
   .leasing_agreement-field {
     width: calc(167px + (332 - 167) * ((100vw - 320px) / (768 - 320)));
     height: calc(41px + (81 - 41) * ((100vw - 320px) / (768 - 320)));
@@ -32,7 +32,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .leasing_agreement-field {
     width: calc(167 * (100vw / 320));
     height: calc(41 * (100vw / 320));

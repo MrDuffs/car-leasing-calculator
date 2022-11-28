@@ -1,5 +1,5 @@
 .leasing_form-inputs {
-  margin-bottom: calc(25px + (50 - 25) * ((100vw - 320px) / (1440 - 320)));
+  margin-bottom: calc(25px + (30 - 25) * ((100vw - 320px) / (1440 - 320)));
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,7 +9,7 @@
     line-height: calc(19px + (20 - 19) * ((100vw - 320px) / (1440 - 320)));
   }
 
-  input {
+  input:not([type="range"]) {
     font-family: NekstBlack, serif;
     font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1440 - 320)));
     line-height: calc(20px + (36 - 20) * ((100vw - 320px) / (1440 - 320)));
@@ -95,14 +95,14 @@
 
 @media (min-width: 1120px) and (max-width: 1439px) {
   .leasing_form-inputs {
-    margin-bottom: calc(25px + (50 - 25) * ((100vw - 320px) / (1120 - 320)));
+    margin-bottom: calc(25px + (30 - 25) * ((100vw - 320px) / (1120 - 320)));
 
     h4 {
       margin-bottom: calc(8px + (24 - 8) * ((100vw - 320px) / (1120 - 320)));
       line-height: calc(19px + (20 - 19) * ((100vw - 320px) / (1120 - 320)));
     }
 
-    input {
+    input:not([type="range"]) {
       font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1120 - 320)));
       line-height: calc(20px + (36 - 20) * ((100vw - 320px) / (1120 - 320)));
     }
@@ -128,19 +128,19 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1119px) {
+@media (max-width: 1119.98px) {
   .leasing_form-inputs {
-    margin-bottom: calc(25px + (39 - 25) * ((100vw - 320px) / (768 - 320)));
+    margin-bottom: calc(25 * ((100vw - 320px) / (768 - 320)));
     flex-direction: column;
     align-items: flex-start;
-    gap: 36px;
+    gap: 15px;
 
     h4 {
       margin-bottom: calc(8px + (24 - 8) * ((100vw - 320px) / (768 - 320)));
       line-height: calc(19px + (20 - 19) * ((100vw - 320px) / (768 - 320)));
     }
 
-    input {
+    input:not([type="range"]) {
       font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (768 - 320)));
       line-height: calc(20px + (36 - 20) * ((100vw - 320px) / (768 - 320)));
     }
@@ -165,23 +165,27 @@
       height:calc(50px + (68 - 50) * ((100vw - 320px) / (768 - 320)));
       font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (768 - 320)));
       line-height: calc(20px + (36 - 20) * ((100vw - 320px) / (768 - 320)));
+
+      .loader {
+        width: calc(21px + (45 - 21) * ((100vw - 320px) / (768 - 320)));
+        height: calc(21px + (45 - 21) * ((100vw - 320px) / (768 - 320)));
+      }
     }
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .leasing_form-inputs {
-    margin-bottom: calc(22 * (100vw / 320));
+    margin-bottom: calc(8 * (100vw / 320));
     flex-direction: column;
     align-items: flex-start;
-    gap: 22px;
 
     h4 {
       margin-bottom: calc(8 * (100vw / 320));
       line-height: calc(19 * (100vw / 320));
     }
 
-    input {
+    input:not([type="range"]) {
       font-size: calc(22 * (100vw / 320));
       line-height: calc(20 * (100vw / 320));
     }
@@ -206,6 +210,12 @@
       height:calc(60 * (100vw / 320));
       font-size: calc(22 * (100vw / 320));
       line-height: calc(20 * (100vw / 320));
+      border-radius: calc(40 * (100vw / 320));
+
+      .loader {
+        width: calc(35 * (100vw / 320));
+        height: calc(35 * (100vw / 320));
+      }
     }
   }
 }

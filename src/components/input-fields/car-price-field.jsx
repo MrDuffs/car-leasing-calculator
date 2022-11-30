@@ -25,7 +25,7 @@ export const CarPriceField = ({ carPriceValue, onChange, disabled }) => {
             <div className="car_price-input">
                 <input
                     type="text"
-                    maxLength={priceFormatter.format(carPriceValue).length}
+                    maxLength={priceFormatter.format(maxCarPrice).length}
                     value={priceFormatter.format(carPriceValue)}
                     onChange={onChange}
                     onBlur={handleBlur}

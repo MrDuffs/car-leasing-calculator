@@ -37,10 +37,9 @@ export const InitialFeeField = ({
                 <div className="initial_fee-input">
                     <input
                         ref={inputEl}
-                        type="number"
-                        min={minInitialFeePercent}
-                        max={maxInitialFeePercent}
-                        value={percentageValue.toString()}
+                        type="text"
+                        maxLength="2"
+                        value={percentageValue}
                         onChange={onChange}
                         onBlur={handleInputBlur}
                         disabled={disabled}

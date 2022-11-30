@@ -19,13 +19,13 @@
       border: 2px solid #F3F3F4;
     }
 
-    input[type="text"] {
-      width: 100%;
-      padding: 0;
-      border: none;
-      background-color: #F3F3F4;
-      cursor: pointer;
-    }
+    //input[type="text"] {
+    //  width: 100%;
+    //  padding: 0;
+    //  border: none;
+    //  background-color: #F3F3F4;
+    //  cursor: pointer;
+    //}
 
     span {
       font-family: NekstBlack, serif;
@@ -75,7 +75,7 @@
         border: 2px solid #EBEBEC;
       }
 
-      input[type="number"] {
+      input[type="text"] {
         padding: 0;
         width: calc(15px + (25 - 15) * ((100vw - 320px) / (1440 - 320)));
         font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
@@ -196,7 +196,7 @@
           calc(9px + (15 - 9) * ((100vw - 320px) / (1120 - 320)));
         }
 
-        input[type="number"] {
+        input[type="text"] {
           width: calc(15px + (25 - 15) * ((100vw - 320px) / (1120 - 320)));
           font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1120 - 320)));
           line-height: calc(14px + (24 - 14) * ((100vw - 320px) / (1120 - 320)));
@@ -283,7 +283,7 @@
           calc(9px + (15 - 9) * ((100vw - 320px) / (768 - 320)));
         }
 
-        input[type="number"] {
+        input[type="text"] {
           width: calc(15px + (24 - 15) * ((100vw - 320px) / (768 - 320)));
           font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (768 - 320)));
           line-height: calc(14px + (24 - 14) * ((100vw - 320px) / (768 - 320)));
@@ -378,7 +378,7 @@
           padding: calc(10 * (100vw / 320));
         }
 
-        input[type="number"] {
+        input[type="text"] {
           width: calc(27 * (100vw / 320));
           font-size: calc(22 * (100vw / 320));
           line-height: calc(20 * (100vw / 320));

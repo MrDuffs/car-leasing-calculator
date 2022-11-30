@@ -6,9 +6,6 @@ export const LeasingTermField = ({ monthsValue, onChange, disabled }) => {
     const maxLeasingTerm = 60;
 
     const handleBlur = (e) => {
-        if (!e.target.value) {
-            e.target.value = monthsValue;
-        }
         if (e.target.value < minLeasingTerm) {
             e.target.value = minLeasingTerm;
             onChange(e);
@@ -24,10 +21,9 @@ export const LeasingTermField = ({ monthsValue, onChange, disabled }) => {
             <h4>Срок лизинга</h4>
             <div className="leasing_term-input">
                 <input
-                    type="number"
-                    min={minLeasingTerm}
-                    max={maxLeasingTerm}
-                    value={monthsValue.toString()}
+                    type="text"
+                    maxLength="2"
+                    value={monthsValue}
                     onChange={onChange}
                     onBlur={handleBlur}
                     disabled={disabled}

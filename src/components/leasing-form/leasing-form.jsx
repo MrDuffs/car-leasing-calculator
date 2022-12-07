@@ -4,7 +4,7 @@ import { CarPriceField } from '../input-fields/car-price-field';
 import { InitialFeeField } from '../input-fields/initial-fee-field';
 import { LeasingTermField } from '../input-fields/leasing-term-field';
 import { LeasingAgreementField } from '../info-fields/leasing-agreement-field';
-import { calculateMonthPay } from '../../utils/calculate-month-pay';
+import { calculateMonthPay, calculateInitialFeeValue, calculateLeasingAgreementValue } from '../../utils/calculations';
 import { MonthPayField } from '../info-fields/month-pay-field';
 import { URL_REQUEST } from '../../constants/urls';
 import { normalizeInputValues } from '../../utils/normalize-input-values';
@@ -16,18 +16,22 @@ const url = URL_REQUEST;
 export const LeasingForm = () => {
     const [carPriceValue, setCarPriceValue] = useState(3300000);
     const [initialFeePercentage, setInitialFeePercentage] = useState(13);
-    const [initialFeeValue, setInitialFeeValue] = useState(Math.round(carPriceValue * (initialFeePercentage / 100)));
+    const [initialFeeValue, setInitialFeeValue] = useState(calculateInitialFeeValue(carPriceValue, initialFeePercentage));
     const [months, setMonths] = useState(60);
 
     const [monthPay, setMonthPay] = useState(calculateMonthPay(carPriceValue, initialFeeValue, months));
-    const [leasingAgreementValue, setLeasingAgreementValue] = useState(initialFeeValue + (months * monthPay));
+    const [leasingAgreementValue, setLeasingAgreementValue] = useState(
+        calculateLeasingAgreementValue(initialFeeValue, months, monthPay),
+    );
 
     const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
-        setInitialFeeValue(Math.round(carPriceValue * (initialFeePercentage / 100)));
-        setMonthPay(calculateMonthPay(carPriceValue, initialFeeValue, months));
-        setLeasingAgreementValue(initialFeeValue + (months * monthPay));
+        if (carPriceValue >= 1000000 && carPriceValue <= 6000000) {
+            setInitialFeeValue(calculateInitialFeeValue(carPriceValue, initialFeePercentage));
+            setMonthPay(calculateMonthPay(carPriceValue, initialFeeValue, months));
+            setLeasingAgreementValue(calculateLeasingAgreementValue(initialFeeValue, months, monthPay));
+        }
     }, [carPriceValue, initialFeePercentage, initialFeeValue, months, monthPay]);
 
     const handleFormSubmit = async (event) => {
